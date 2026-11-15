@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nouhaila Creates | Kit Punch Needle Maroc – Loisirs créatifs</title>
 <meta name="description" content="Kits DIY Punch Needle pour débutants au Maroc. Livraison partout au Maroc, paiement à la livraison. Nouhaila Creates.">
-<meta name="theme-color" content="#ffdbe9"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://nouhailacreates.art/">
+<meta name="theme-color" content="#ffdbe9"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://nouhailacreates.store/">
 <!-- Analytics ready: colle ici GA4 / Meta Pixel / Search Console meta -->
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
 <style>
@@ -67,7 +67,7 @@ footer .w{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(150
 <header><div class="nav"><a class="logo" href="#home" aria-label="Nouhaila Creates"></a><nav id="nav" aria-label="Navigation"></nav>
 </div></header>
 <main id="app" class="w"></main>
-<footer><div class="w"><div><b>Nouhaila Creates</b><br>Create your own little world.<br>nouhailacreates.art</div>
+<footer><div class="w"><div><b>Nouhaila Creates</b><br>Create your own little world.<br>nouhailacreates.store</div>
 <div><a href="#shop">Shop</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#story">Our story</a></div>
 <div><a href="https://instagram.com/nouhailacreates" target="_blank" rel="noopener">Instagram @nouhailacreates</a><a id="wa2" target="_blank" rel="noopener">WhatsApp</a></div>
 <div><a href="#faq">Livraison</a><a href="#faq">Retours</a><a href="#faq">Confidentialité</a><a href="#faq">Conditions</a></div></div></footer>
@@ -148,7 +148,7 @@ contact:()=>`<section><h1>Contact</h1><p>${tr("Clique : un message est prêt pou
 function prod(id){const p=P.find(x=>x.id==id);if(!p)return V.shop();return `<section><a href="#shop" class="mut">← ${tr("Nos packs","Our packs","الباكات")}</a><div class="pd" style="margin-top:12px"><div><img class="main" id="mi" src="${IM[p.imgs[0]]}" alt="${p.name[0]}"><div class="th">${p.imgs.map(k=>`<img src="${IM[k]}" alt="${p.name[0]}" onclick="mi.src=this.src">`).join("")}</div></div><div><span class="tag">${X(p.sub)}</span><h1>${X(p.name)}</h1><div class="price" style="font-size:1.4rem">${pr(p)}</div><p>${X(p.desc)}</p>${p.perks?`<ul class="pk">${X(p.perks).map(a=>`<li>${a}</li>`).join("")}</ul>`:""}<p><b>${tr("Dans la boîte :","In the box:","محتويات الباقة:")}</b> ${X(p.inc)}</p><p><b>${tr("Pour qui :","Who it's for:","لمن:")}</b> ${X(p.who)}</p>${p.colors?`<p><b>${tr("Choisis tes couleurs de laine :","Choose your yarn colours:","اختاري ألوان الصوف الخاصة بك:")}</b> ${tr("dis-moi tes couleurs préférées sur WhatsApp et personnalise ton pack à ton goût.","tell me your favourite colours on WhatsApp and customise your pack to your taste.","قولي لي ألوانك المفضلة عبر واتساب وخصصي باقتك حسب ذوقك.")}</p>`:""}${p.free?`<p><b>${tr("Livraison gratuite partout au Maroc.","Free delivery across Morocco.","التوصيل مجاني إلى جميع أنحاء المغرب.")}</b></p>`:""}<a class="btn g" target="_blank" rel="noopener" href="${om(p)}">${tr("Commander sur WhatsApp","Order on WhatsApp","اطلبي عبر واتساب")}</a></div></div></section>`}
 function route(){const h=location.hash.slice(1)||"home",[r,a]=h.split("/");$("#app").innerHTML=r=="p"?prod(a):(V[r]||V.home)();scrollTo(0,0)}
 function lang(l){L=l;document.documentElement.lang=l;document.documentElement.dir=l=="ar"?"rtl":"ltr";$("#bar").textContent=t("bar");const k=["home","shop","learn","learn","story","faq","contact"];$("#nav").innerHTML=X(NAV).map((n,i)=>`<a href="#${k[i]}">${n}</a>`).join("");
-$("footer .w").innerHTML=`<div><b>Nouhaila Creates</b><br>Create your own little world.<br>nouhailacreates.art</div><div><a href="#shop">${tr("Nos packs","Our packs","الباكات")}</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#story">${tr("Notre histoire","Our story","قصتنا")}</a></div><div><a href="https://instagram.com/nouhailacreates" target="_blank" rel="noopener">Instagram @nouhailacreates</a><a id="wa2" target="_blank" rel="noopener">WhatsApp</a></div><div><a href="#faq">${tr("Livraison","Delivery","التوصيل")}</a></div>`;
+$("footer .w").innerHTML=`<div><b>Nouhaila Creates</b><br>Create your own little world.<br>nouhailacreates.store</div><div><a href="#shop">${tr("Nos packs","Our packs","الباكات")}</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#story">${tr("Notre histoire","Our story","قصتنا")}</a></div><div><a href="https://instagram.com/nouhailacreates" target="_blank" rel="noopener">Instagram @nouhailacreates</a><a id="wa2" target="_blank" rel="noopener">WhatsApp</a></div><div><a href="#faq">${tr("Livraison","Delivery","التوصيل")}</a></div>`;
 $("#wa2").href=wl(GM());$("#wab").href=wl(GM());$(".logo").innerHTML=LG(46)+"<span>Nouhaila Creates</span>";route()}
 $("#lang").onchange=e=>lang(e.target.value);addEventListener("hashchange",route);lang("fr");
 </script></body></html>
