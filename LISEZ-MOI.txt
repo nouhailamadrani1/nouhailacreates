@@ -1,0 +1,17 @@
+NOUHAILA CREATES - dossier du site
+
+CONTENU
+- index.html : le site (page unique, toutes les pages sont dedans)
+- images/ : toutes les photos (garde ce dossier a cote de index.html)
+- favicon.svg, robots.txt, sitemap.xml
+
+HEBERGER
+1) Netlify / Cloudflare Pages / Vercel : glisse-depose le dossier tel quel.
+2) Hebergeur classique (Hostinger, OVH...) : mets TOUT le contenu dans public_html (index.html a la racine).
+3) Domaine : nouhailacreates.art -> pointe-le vers l'hebergeur (DNS fournis par l'hebergeur).
+
+A MODIFIER (dans index.html, ouvre avec un editeur de texte)
+- Numero WhatsApp : cherche  const WA="212635712179"
+- Prix / descriptions : cherche  const P=[
+- Google Analytics / Meta Pixel / Search Console : colle les codes sous la ligne "Analytics ready" dans <head>
+- Photos : remplace les fichiers dans images/ en gardant les memes noms
